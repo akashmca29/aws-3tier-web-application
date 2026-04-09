@@ -7,7 +7,35 @@
 - SNS Email Alerts
 
 ---
-
+aws-3tier-web-application/
+│
+├── README.md
+├── architecture-diagram.png
+├── screenshots/
+│   ├── vpc.png
+│   ├── public-subnet.png
+│   ├── private-subnet.png
+│   ├── alb.png
+│   ├── ec2-web-tier.png
+│   ├── ec2-app-tier.png
+│   ├── rds.png
+│   ├── cloudfront.png
+│   ├── route53.png
+│   ├── sns.png
+│   └── cloudwatch.png
+├── web-tier/
+│   ├── index.html
+│   └── style.css
+├── app-tier/
+│   └── app.py
+├── userdata-script/
+│   ├── webserver-install.sh
+│   └── appserver-install.sh
+├── deployment-steps.md
+├── security-group-rules.md
+├── interview-questions.md
+├── resume-points.md
+└── cost-estimation.md
 ## Architecture Diagram
 
 ![Architecture Diagram](architecture-diagram.png)
@@ -52,23 +80,3 @@
 
 ---
 
-## Resume Points
-
-- Designed a 3-tier web application architecture using EC2, ALB, and RDS.
-- Implemented private subnets for secure application and database layers.
-- Configured Bastion Host for administrative access.
-- Integrated Route 53 and CloudFront for secure content delivery.
-- Configured CloudWatch alarms and SNS notifications.
-
----
-
-## Interview Questions
-
-1. What is a 3-tier architecture?
-2. Why are private subnets used?
-3. What is the role of Bastion Host?
-4. Why use ALB?
-5. How does CloudFront improve performance?
-6. What happens if one EC2 instance fails?
-7. Why place RDS in private subnet?
-8. What is the difference between Web Tier and App Tier?
